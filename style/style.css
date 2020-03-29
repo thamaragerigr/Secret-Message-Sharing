@@ -1,0 +1,41 @@
+body {
+    align-items: center;
+    justify-content: center;
+    background-color: #fdf7cd;
+}
+
+.valign-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+img {
+  height: 500px;
+  width: auto;
+}
+
+label{
+    font-size: 30px;
+    color:  #083232;
+    font-family: 'Paytone One', sans-serif;
+}
+
+.btn {
+  background-color: #083232;
+  border-radius: 6px;
+  font-family: 'Sen', sans-serif;
+  font-size: 12px;
+  margin: 20px;
+}
+
+.btn:hover {
+    background: #193f3f;
+}
+
+p {
+    font-size: 10px;
+    font-family: 'Sen', sans-serif;
+}
