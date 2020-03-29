@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secret Message</title>
 
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style/style.css">
 
@@ -14,20 +15,21 @@
 <body>
     <div class="valign-wrapper">
     <div class="row center-align ">
-        <img src="images/image.png" srcset="">
+        <img src="images/image.png" alt="Secret Message Sharing App">
 
         <div id="message-show" class="hide">
           <h1></h1>
           <div>
-              <a href="/index.html" target="_blank">Create your own message</a>
+              <a href="/index.html" target="_blank">✨ Create your own message ✨</a>
           </div>
         </div>
 
         <div class="col s6 offset-s3">
             <div id="message-form" >
                 <form>
-                    <label>Enter a secret message</label>
+                    <label>Enter a Secret Message</label>
                     <input id="message-input" type="text">
+                    <p id="valid" class="hide red-text">Introduce a message!</p>
                     <button class="btn">Create Link</button>
                 </form>
             </div>
@@ -37,8 +39,7 @@
                 <input id="link-input" type="text">
             </div>
 
-            
-        <p>Illustration by</p>
+        <p>Illustration by <a href="https://dribbble.com/Ivan_Haidutski" target="_blank">Ivan Haidutski</a></p>
         </div>
     </div>
 </div>

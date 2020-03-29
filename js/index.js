@@ -15,12 +15,18 @@ document.querySelector('form').addEventListener('submit', event => {
   const input = document.querySelector('#message-input');
   const encrypted = btoa(input.value);
 
-  const linkInput = document.querySelector('#link-input');
-  linkInput.value = `${window.location}#${encrypted}`;
-  linkInput.select();
-
-  document.querySelector('#message-form').classList.add('hide');
-  document.querySelector('#link-form').classList.remove('hide');
-
+  if(!input.value) {
+       document.querySelector('#valid').classList.remove('hide');
+  } else {
+  
+    const linkInput = document.querySelector('#link-input');
+    linkInput.value = `${window.location}#${encrypted}`;
+    linkInput.select();
+  
+    document.querySelector('#message-form').classList.add('hide');
+    document.querySelector('#link-form').classList.remove('hide');
+  
+  }
 
 });
+
